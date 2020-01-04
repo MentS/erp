@@ -1,0 +1,10 @@
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://39.107.105.53:3306/erp?useUnicode=true&useSSL=false&characterEncoding=utf8
+

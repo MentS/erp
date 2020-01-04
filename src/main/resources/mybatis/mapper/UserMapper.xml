@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.leo.erp.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.leo.erp.entity.User">
+    <result column="id" property="id" />
+        <result column="email" property="email" />
+        <result column="enabled" property="enabled" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="dept_id" property="dept_id" />
+        <result column="phone" property="phone" />
+        <result column="job_id" property="job_id" />
+        <result column="create_time" property="create_time" />
+        <result column="last_password_reset_time" property="last_password_reset_time" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        email, enabled, username, password, dept_id, phone, job_id, create_time, last_password_reset_time
+    </sql>
+
+</mapper>
